@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "69f8f756-af6d-4c12-9704-7238f9bc2f3c",
+		"name": "sistema de categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42411346"
+	},
+	"item": [
+		{
+			"name": "otras funcionalidades",
+			"item": [
+				{
+					"name": "publicacion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlN2JmYTJlYTI2NjhlZDZiZTUxYjUiLCJpYXQiOjE3NDA1MzY4NDgsImV4cCI6MTc0MDU0MDQ0OH0.mJwC61c1LZtn9qEpbne17acvldPBf70hxxQpMb_crUc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"La tecnologia\",\r\n    \"text\":\" aplicación de la ciencia y la técnica para resolver problemas y necesidades humanas\",\r\n    \"category\":\"ciencia\",\r\n    \"username\": \"jm\"\r\n\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publicationSystem/v1/publications/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publicationSystem",
+								"v1",
+								"publications",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "coments",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlN2JmYTJlYTI2NjhlZDZiZTUxYjUiLCJpYXQiOjE3NDA1MzY4NDgsImV4cCI6MTc0MDU0MDQ0OH0.mJwC61c1LZtn9qEpbne17acvldPBf70hxxQpMb_crUc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"hc\",\r\n    \"email\": \"hugo@gmail.com\",\r\n    \"text\": \"This is a sample comment. Great post!\",\r\n    \"holder\": \"67be6e35600ef89a50ae184b\",\r\n    \"post\": \"67be7cae2ea2668ed6be51bd\",\r\n    \"condition\": true\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publicationSystem/v1/comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publicationSystem",
+								"v1",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"hugo@gmail.com\",\r\n   \"password\": \"87654321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publicationSystem/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publicationSystem",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"hugo\",\r\n  \"surname\": \"chavez\",\r\n  \"username\": \"hc\",\r\n  \"email\": \"hugo@gmail.com\",\r\n  \"phone\": \"87654321\",\r\n  \"password\": \"87654321\",\r\n  \"profilePicture\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/publicationSystem/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publicationSystem",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNmUzNTYwMGVmODlhNTBhZTE4NGIiLCJpYXQiOjE3NDA1MzMzMDUsImV4cCI6MTc0MDUzNjkwNX0._E1l4YCDCKquPgFAJ-WFeZh1ng0MBIf-l2jEEf_prY4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Humor\",\r\n    \"description\":\"Categoría en base a humor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/socialmedia/v1/categorys/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"socialmedia",
+								"v1",
+								"categorys",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

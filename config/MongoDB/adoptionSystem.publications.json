@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67be6e49600ef89a50ae1850"
+  },
+  "title": "La tecnologia",
+  "text": " aplicación de la ciencia y la técnica para resolver problemas y necesidades humanas",
+  "category": "ciencia",
+  "status": true,
+  "user": {
+    "$oid": "67be6e35600ef89a50ae184b"
+  },
+  "createdAt": {
+    "$date": "2025-02-26T01:28:41.563Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:28:41.563Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be7cae2ea2668ed6be51bd"
+  },
+  "title": "La tecnologia",
+  "text": " aplicación de la ciencia y la técnica para resolver problemas y necesidades humanas",
+  "category": "ciencia",
+  "status": true,
+  "user": {
+    "$oid": "67be6e35600ef89a50ae184b"
+  },
+  "createdAt": {
+    "$date": "2025-02-26T02:30:06.501Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T02:30:06.501Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be7d332ea2668ed6be51c5"
+  },
+  "title": "La tecnologia",
+  "text": " aplicación de la ciencia y la técnica para resolver problemas y necesidades humanas",
+  "category": "ciencia",
+  "status": true,
+  "user": {
+    "$oid": "67be6e35600ef89a50ae184b"
+  },
+  "createdAt": {
+    "$date": "2025-02-26T02:32:19.664Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T02:32:19.664Z"
+  }
+}]

@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "67be7cc82ea2668ed6be51c1"
+  },
+  "username": "hc",
+  "email": "hugo@gmail.com",
+  "text": "This is a sample comment. Great post!",
+  "holder": {
+    "$oid": "67be6e35600ef89a50ae184b"
+  },
+  "post": {
+    "$oid": "67be7cae2ea2668ed6be51bd"
+  },
+  "condition": true,
+  "createdAt": {
+    "$date": "2025-02-26T02:30:32.902Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T02:30:32.902Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be7d6f2ea2668ed6be51cc"
+  },
+  "username": "hc",
+  "email": "hugo@gmail.com",
+  "text": "This is a sample comment. Great post!",
+  "holder": {
+    "$oid": "67be6e35600ef89a50ae184b"
+  },
+  "post": {
+    "$oid": "67be7cae2ea2668ed6be51bd"
+  },
+  "condition": true,
+  "createdAt": {
+    "$date": "2025-02-26T02:33:19.533Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T02:33:19.533Z"
+  }
+}]
